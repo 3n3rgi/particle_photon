@@ -1,0 +1,53 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+var accessToken = "9e7ca71f79c8874db9ef908522b503a0c7744e2c";
+    
+var deviceID = "320021000547343232363230"
+// CQ_photon_1 ID = 40002a000847343339373536;
+// CQ_photon_2 ID = 1c003f000347343339373536;
+// CQ_photon_3 ID = 260038000a47343432313031;
+// my_photon_1 ID = 320021000547343232363230;
+
+var url = "https://api.spark.io/v1/devices/" + deviceID + "/color";
+
+function switchRed() {$.post(url, {params: "red", access_token: accessToken });}  
+function switchGreen() {$.post(url, {params: "green", access_token: accessToken });}    
+function switchBlue() {$.post(url, {params: "blue", access_token: accessToken });}   
+function switchCyan(){$.post(url, {params: "cyan", access_token: accessToken });}  
+function switchWhite(){$.post(url, {params: "white", access_token: accessToken });}     
+function switchOldlace(){$.post(url, {params: "oldlace", access_token: accessToken });} 
+ function switchWarmWhite() {$.post(url, {params: "warmwhite", access_token: accessToken });}  
+function switchPurple() {$.post(url, {params: "purple", access_token: accessToken });}    
+function switchMagenta() {$.post(url, {params: "magenta", access_token: accessToken });}   
+function switchYellow(){$.post(url, {params: "yellow", access_token: accessToken });}  
+function switchOrange(){$.post(url, {params: "orange", access_token: accessToken });}     
+function switchPink(){$.post(url, {params: "pink", access_token: accessToken });} 
+function switchDim(){$.post(url, {params: "dim", access_token: accessToken });} 
+    
+
+</script>
+</head>	
+
+<body>
+
+<h1>Change LED color</h1>	
+	
+<input type="button" onClick="switchRed()" value="red"/>
+<input type="button" onClick="switchGreen()" value="green"/>
+<input type="button" onClick="switchBlue()" value="blue"/>
+<input type="button" onClick="switchCyan()" value="cyan"/>
+<input type="button" onClick="switchWhite()" value="white"/>
+<input type="button" onClick="switchOldlace()" value="oldlace"/>
+<input type="button" onClick="switchWarmWhite()" value="warmwhite"/>
+<input type="button" onClick="switchPurple()" value="purple"/>
+<input type="button" onClick="switchMagenta()" value="magenta"/>
+<input type="button" onClick="switchYellow()" value="yellow"/>
+<input type="button" onClick="switchOrange()" value="orange"/>
+<input type="button" onClick="switchPink()" value="pink"/>
+<input type="button" onClick="switchDim()" value="dim"/>
+    
+</body>
+</html>
